@@ -1,13 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
-int a = 4;
-int b = 8;
+int a = 1;
+int b = 10;
 
 int[] arr = new int[9];
 int j = 1;
 
-for (int i = 0; i < arr.Length; i++)
+while (a <= b)
 {
-    arr[i] = a * j;
-    Console.Write(arr[i] + " ");
-    j++;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        arr[i] = a * j;
+        Console.Write(arr[i] + " ");
+        j++;
+    }
+    
+    a++;
+    j = 1;
+    Console.WriteLine();
 }
