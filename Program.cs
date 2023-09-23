@@ -16,7 +16,7 @@ for (int i = 0; a < b; i++)
     {
         arr[y] = a * count;
         globalArr[i] = arr;
-        // Console.Write(globalArr[0][y] + " ");
+        Console.Write(globalArr[0][y] + " ");
         count++;
     }
     Console.WriteLine();
