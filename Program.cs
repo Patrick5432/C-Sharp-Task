@@ -1,20 +1,28 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
+//Переменные
 int a = 1;
 int b = 10;
+int count = 1;
 
-int[] arr = new int[9];
-int j = 1;
+//Массивы
 
-while (a <= b)
+int[][] globalArr = new int[b - a][];
+
+for (int i = 0; a < b; i++)
 {
-    for (int i = 0; i < arr.Length; i++)
+    int[] arr = new int[9];
+    for (int y = 0; y < arr.Length; y++)
     {
-        arr[i] = a * j;
-        Console.Write(arr[i] + " ");
-        j++;
+        arr[y] = a * count;
+        globalArr[i] = arr;
+        // Console.Write(globalArr[0][y] + " ");
+        count++;
     }
-    
-    a++;
-    j = 1;
     Console.WriteLine();
+
+    a++;
+    count = 1;
 }
+
+Console.Write(globalArr[3][0]);
