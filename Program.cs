@@ -1,8 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-//Переменные
-int a = 1;
-int b = 10;
+﻿//Переменные
+Console.WriteLine("Введите первое число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите второе число: ");
+int b = Convert.ToInt32(Console.ReadLine());
 int count = 1;
 
 //Массивы
@@ -15,10 +15,10 @@ for (int i = 0; a < b; i++)
     for (int y = 0; y < arr.Length; y++)
     {
         arr[y] = a * count;
-        globalArr[i] = arr;
         Console.Write(arr[y] + " ");
         count++;
     }
+    globalArr[i] = arr;
     Console.WriteLine();
 
     a++;
